@@ -82,8 +82,7 @@ class Countdown extends Component {
             <button onClick={() => this.adjustTimer("decMinutes")}>&#8681;</button>
             <button onClick={() => this.adjustTimer("decSeconds")}>&#8681;</button>
             
-            {timerOn === false &&
-            (timerStart === 0 || timerTime === timerStart) && (
+            {timerOn === false && (timerStart === 0 || timerTime === timerStart) && (
                 <button onClick={this.startTimer}>Start</button>
             )}
             {timerOn === true && timerTime >= 1000 && (
